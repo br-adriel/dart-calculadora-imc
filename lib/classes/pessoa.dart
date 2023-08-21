@@ -28,6 +28,7 @@ class Pessoa {
   }
 
   set nome(String novoNome) {
+    novoNome = novoNome.trim();
     if (novoNome.isNotEmpty) {
       _nome = novoNome;
     }
